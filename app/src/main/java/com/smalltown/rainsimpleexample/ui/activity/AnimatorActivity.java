@@ -41,6 +41,7 @@ public class AnimatorActivity extends BaseActivity {
     private void initData() {
         datas = new ArrayList<>();
         datas.add("飞行动画");
+        datas.add("属性动画");
     }
 
     private class MyClickListener implements AnimatorAdapter.OnItemClickLitener{
@@ -51,12 +52,20 @@ public class AnimatorActivity extends BaseActivity {
                 case 0:
                     clickFlyItem();
                     break;
+                case 1:
+                    clickObjectAnimatorItem();
+                    break;
             }
         }
     }
 
     private void clickFlyItem() {
         Intent intent = new Intent(AnimatorActivity.this,FlyActivity.class);
+        startActivity(intent);
+    }
+
+    private void clickObjectAnimatorItem(){
+        Intent intent = new Intent(AnimatorActivity.this,ObjAnimatorActivity.class);
         startActivity(intent);
     }
 }

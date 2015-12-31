@@ -25,6 +25,7 @@
         <activity android:name=".ui.activity.FlyActivity"/>
         <activity android:name=".ui.activity.AnimatorActivity"/>
         <activity android:name=".ui.activity.DialogFragmentActivity"/>
+        <activity android:name=".ui.activity.ObjAnimatorActivity"/>
     </application>
 
 </manifest>

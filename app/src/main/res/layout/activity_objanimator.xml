@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+              android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_trans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="平移动画"/>
+
+        <Button
+            android:id="@+id/btn_rote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="旋转动画"/>
+
+        <Button
+            android:id="@+id/btn_scal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="缩放动画"/>
+
+        <Button
+            android:id="@+id/btn_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一起动"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/view1"
+            android:layout_marginTop="100dp"
+            android:layout_gravity="center"
+            android:background="#0000ff"
+            android:layout_width="30dp"
+            android:layout_height="30dp">
+        </View>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_margin="10dp"
+            android:background="#00ffff"
+            android:layout_width="80dp"
+            android:layout_height="80dp">
+        </View>
+
+        <View
+            android:id="@+id/view3"
+            android:layout_margin="10dp"
+            android:background="#00ff33"
+            android:layout_width="120dp"
+            android:layout_height="80dp">
+        </View>
+    </LinearLayout>
+
+</LinearLayout>
