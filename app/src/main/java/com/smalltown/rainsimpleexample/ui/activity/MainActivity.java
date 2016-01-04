@@ -61,7 +61,6 @@ public class MainActivity extends BaseActivity
      */
     @OnClick(R.id.main_btn_to_recycle)
     void toRecycleActivity(){
-        //点击跳转至RecycleActivity 测试
         Intent intent = new Intent(MainActivity.this,RecycleActivity.class);
         startActivity(intent);
     }
@@ -71,7 +70,6 @@ public class MainActivity extends BaseActivity
      */
     @OnClick(R.id.main_btn_to_volley)
     void toVolley(){
-        //点击跳转至RecycleActivity 测试
         Intent intent = new Intent(MainActivity.this,RecycleActivity.class);
         startActivity(intent);
     }
@@ -81,7 +79,6 @@ public class MainActivity extends BaseActivity
      */
     @OnClick(R.id.main_btn_to_JsBridge)
     void jPush(){
-        //点击跳转至RecycleActivity 测试
         Intent intent = new Intent(MainActivity.this,JsBridgeActivity.class);
         startActivity(intent);
     }
@@ -91,7 +88,6 @@ public class MainActivity extends BaseActivity
      */
     @OnClick(R.id.main_btn_to_randomLayout)
     void toRandomLayout(){
-        //点击跳转至RecycleActivity 测试
         Intent intent = new Intent(MainActivity.this,RandomActivity.class);
         startActivity(intent);
     }
@@ -100,7 +96,6 @@ public class MainActivity extends BaseActivity
      */
     @OnClick(R.id.main_btn_to_animator)
     void toAnimatorActivity(){
-        //点击跳转至RecycleActivity 测试
         Intent intent = new Intent(MainActivity.this,AnimatorActivity.class);
         startActivity(intent);
     }
@@ -110,8 +105,16 @@ public class MainActivity extends BaseActivity
      */
     @OnClick(R.id.main_btn_to_dialogFragment)
     void toDialogFragmentActivity(){
-        //点击跳转至RecycleActivity 测试
         Intent intent = new Intent(MainActivity.this,DialogFragmentActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 跳转Mvp框架测试页面
+     */
+    @OnClick(R.id.main_btn_to_mvpsimple)
+    void toMvpSimple(){
+        Intent intent = new Intent(MainActivity.this,MvpSimpleActivity.class);
         startActivity(intent);
     }
 
