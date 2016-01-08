@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="" >
+        <menu>
+            <item android:id="@+id/nav_head" android:icon="@android:drawable/ic_menu_camera" android:title="首页"/>
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_camara" android:icon="@android:drawable/ic_menu_camera" android:title="日常心理学"
+            />
+        <item android:id="@+id/nav_gallery" android:icon="@android:drawable/ic_menu_gallery" android:title="用户推荐日报"
+            />
+        <item android:id="@+id/nav_slideshow" android:icon="@android:drawable/ic_menu_slideshow"
+              android:title="不许无聊" />
+        <item android:id="@+id/nav_manage" android:icon="@android:drawable/ic_menu_manage" android:title="电影日报"
+            />
+        <item android:id="@+id/nav_design" android:icon="@android:drawable/ic_menu_manage" android:title="设计日报"
+            />
+        <item android:id="@+id/nav_company" android:icon="@android:drawable/ic_menu_manage" android:title="大公司日报"
+            />
+        <item android:id="@+id/nav_financial" android:icon="@android:drawable/ic_menu_manage" android:title="财经日报"
+            />
+        <item android:id="@+id/nav_net_safe" android:icon="@android:drawable/ic_menu_manage" android:title="互联网安全"
+            />
+        <item android:id="@+id/nav_start_game" android:icon="@android:drawable/ic_menu_manage" android:title="开始游戏"
+            />
+        <item android:id="@+id/nav_music" android:icon="@android:drawable/ic_menu_manage" android:title="音乐日报"
+            />
+        <item android:id="@+id/nav_cartoon" android:icon="@android:drawable/ic_menu_manage" android:title="卡通日报"
+            />
+        <item android:id="@+id/nav_sport" android:icon="@android:drawable/ic_menu_manage" android:title="体育日报"
+            />
+    </group>
+
+    <item android:title="Communicate" >
+        <menu>
+            <item android:id="@+id/nav_share" android:icon="@android:drawable/ic_menu_share" android:title="Share" />
+            <item android:id="@+id/nav_send" android:icon="@android:drawable/ic_menu_send" android:title="Send" />
+        </menu>
+    </item>
+</menu>

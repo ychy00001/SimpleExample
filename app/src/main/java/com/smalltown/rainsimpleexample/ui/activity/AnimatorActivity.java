@@ -23,7 +23,7 @@ public class AnimatorActivity extends BaseActivity {
     private List<String> datas;
 
     @Override
-    protected int initView() {
+    protected int setContentLayout() {
         return R.layout.activity_animator;
     }
 

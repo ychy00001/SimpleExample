@@ -16,6 +16,9 @@ public class ISplashModeImpl implements ISplashMode {
 
     @Override
     public SplashMode getMode() {
+        if(null == splashMode) {
+            splashMode = new SplashMode();
+        }
         return splashMode;
     }
 }

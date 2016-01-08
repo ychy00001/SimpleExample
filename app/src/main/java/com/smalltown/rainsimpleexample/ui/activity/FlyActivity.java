@@ -14,7 +14,7 @@ public class FlyActivity extends BaseActivity{
 
     @Bind(R.id.flyView)FlyView mFlyView;
     @Override
-    protected int initView() {
+    protected int setContentLayout() {
         return R.layout.activity_fly;
     }
 

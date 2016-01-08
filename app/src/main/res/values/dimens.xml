@@ -8,7 +8,7 @@
     <dimen name="fab_margin">16dp</dimen>
 
 
-    <!--start 字体大小-->
+    <!--splash 字体大小-->
     <dimen name="text_size_13">13sp</dimen>
     <!--end 字体大小-->
 

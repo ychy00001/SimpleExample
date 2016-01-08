@@ -3,7 +3,8 @@
               android:id="@+id/ll_content"
             android:layout_margin="10dp"
               android:layout_width="match_parent"
-              android:layout_height="match_parent">
+              android:layout_height="match_parent"
+            android:background="@color/defaultBackground_light">
     <com.smalltown.rainsimpleexample.ui.view.FlowLayout
         android:id="@+id/flowlayout"
         android:layout_width="match_parent"

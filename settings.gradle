@@ -1,1 +1,1 @@
-include ':app', ':library-nineoldandroid'
+include ':app', ':library-nineoldandroid', ':library-materialprogressbar', ':library-volley'

@@ -24,7 +24,7 @@ public class RecycleActivity extends BaseActivity {
     private RecycleAdapter mAdapter;
 
     @Override
-    protected int initView() {
+    protected int setContentLayout() {
         return R.layout.activity_recycle;
     }
 

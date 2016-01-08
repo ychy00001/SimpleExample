@@ -28,7 +28,7 @@ public class RandomActivity extends BaseActivity {
     private float hotRadios;
 
     @Override
-    protected int initView() {
+    protected int setContentLayout() {
         return R.layout.activity_random;
     }
 

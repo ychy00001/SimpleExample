@@ -6,8 +6,12 @@ package com.smalltown.rainsimpleexample.mode;
 public class SplashMode {
     public boolean isOnLine;
     public int progress;
+    public String text;
+    public String startImgUrl;
 
-    public SplashMode(boolean isOnLine, int progress) {
+    public SplashMode() {}
+
+    public SplashMode(boolean isOnLine, int progress,String startImgUrl) {
         this.isOnLine = isOnLine;
         this.progress = progress;
     }

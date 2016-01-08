@@ -19,13 +19,13 @@ import com.smalltown.rainsimpleexample.util.ToastUtil;
 public class MainActivity extends BaseActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    private Toolbar mToolbar;
     private FloatingActionButton mFab;//浮动按钮
-    private DrawerLayout mDrawer;
-    private NavigationView mNavigationView;
+    @SuppressWarnings("FieldCanBeLocal") private Toolbar mToolbar;
+    @SuppressWarnings("FieldCanBeLocal") private DrawerLayout mDrawer;
+    @SuppressWarnings("FieldCanBeLocal") private NavigationView mNavigationView;
 
     @Override
-    protected int initView() {
+    protected int setContentLayout() {
         return R.layout.activity_main;
     }
 
@@ -62,16 +62,7 @@ public class MainActivity extends BaseActivity
     @OnClick(R.id.main_btn_to_recycle)
     void toRecycleActivity(){
         Intent intent = new Intent(MainActivity.this,RecycleActivity.class);
-        startActivity(intent);
-    }
-
-    /**
-     * 点击跳转Volley网络请求
-     */
-    @OnClick(R.id.main_btn_to_volley)
-    void toVolley(){
-        Intent intent = new Intent(MainActivity.this,RecycleActivity.class);
-        startActivity(intent);
+        startActivity(intent,TRANS_TYPE_TRANSLATE);
     }
 
     /**
@@ -80,7 +71,7 @@ public class MainActivity extends BaseActivity
     @OnClick(R.id.main_btn_to_JsBridge)
     void jPush(){
         Intent intent = new Intent(MainActivity.this,JsBridgeActivity.class);
-        startActivity(intent);
+        startActivity(intent,TRANS_TYPE_TRANSLATE);
     }
 
     /**
@@ -89,7 +80,7 @@ public class MainActivity extends BaseActivity
     @OnClick(R.id.main_btn_to_randomLayout)
     void toRandomLayout(){
         Intent intent = new Intent(MainActivity.this,RandomActivity.class);
-        startActivity(intent);
+        startActivity(intent,TRANS_TYPE_TRANSLATE);
     }
     /**
      * 跳转动画界面
@@ -97,7 +88,7 @@ public class MainActivity extends BaseActivity
     @OnClick(R.id.main_btn_to_animator)
     void toAnimatorActivity(){
         Intent intent = new Intent(MainActivity.this,AnimatorActivity.class);
-        startActivity(intent);
+        startActivity(intent,TRANS_TYPE_TRANSLATE);
     }
 
     /**
@@ -106,7 +97,7 @@ public class MainActivity extends BaseActivity
     @OnClick(R.id.main_btn_to_dialogFragment)
     void toDialogFragmentActivity(){
         Intent intent = new Intent(MainActivity.this,DialogFragmentActivity.class);
-        startActivity(intent);
+        startActivity(intent,TRANS_TYPE_TRANSLATE);
     }
 
     /**
@@ -115,7 +106,15 @@ public class MainActivity extends BaseActivity
     @OnClick(R.id.main_btn_to_mvpsimple)
     void toMvpSimple(){
         Intent intent = new Intent(MainActivity.this,MvpSimpleActivity.class);
-        startActivity(intent);
+        startActivity(intent,TRANS_TYPE_TRANSLATE);
+    }
+    /**
+     * 跳转Mvp框架测试页面
+     */
+    @OnClick(R.id.main_btn_to_GdMap)
+    void toGdMap(){
+        Intent intent = new Intent(MainActivity.this,GdMapActivity.class);
+        startActivity(intent,TRANS_TYPE_TRANSLATE);
     }
 
 
@@ -179,4 +178,8 @@ public class MainActivity extends BaseActivity
     }
 
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
 }

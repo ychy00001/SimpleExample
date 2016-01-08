@@ -26,7 +26,7 @@ public class MvpSimpleActivity extends BaseActivity implements IInfoView,View.On
     private InfoPresenter mInfoPresenter;
 
     @Override
-    protected int initView() {
+    protected int setContentLayout() {
         return R.layout.activity_mvp;
     }
 

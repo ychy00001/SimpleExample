@@ -28,7 +28,7 @@ public class ObjAnimatorActivity extends BaseActivity {
     @Bind(R.id.view3)View mView3;
 
     @Override
-    protected int initView() {
+    protected int setContentLayout() {
         return R.layout.activity_objanimator;
     }
 

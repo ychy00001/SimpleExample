@@ -19,7 +19,7 @@ public class JsBridgeActivity extends BaseActivity {
     private JSBridge jsBridge;
 
     @Override
-    protected int initView() {
+    protected int setContentLayout() {
         return R.layout.activity_jsbridge;
     }
 

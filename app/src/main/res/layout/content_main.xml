@@ -14,15 +14,8 @@
         android:id="@+id/main_btn_to_recycle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="?attr/ThemeTextColor"
         android:text="RecycleView示例"
-        android:background="#772222ff"/>
-
-    <Button
-        android:layout_margin="10dp"
-        android:id="@+id/main_btn_to_volley"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Volley示例"
         android:background="#772222ff"/>
 
     <Button
@@ -30,6 +23,7 @@
         android:id="@+id/main_btn_to_JsBridge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="?attr/ThemeTextColor"
         android:text="JS交互"
         android:background="#772222ff"/>
 
@@ -38,6 +32,7 @@
     android:id="@+id/main_btn_to_randomLayout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:textColor="?attr/ThemeTextColor"
     android:text="随机长度布局"
     android:background="#772222ff"/>
 
@@ -46,6 +41,7 @@
         android:id="@+id/main_btn_to_animator"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="?attr/ThemeTextColor"
         android:text="动画"
         android:background="#772222ff"/>
 
@@ -54,6 +50,7 @@
         android:id="@+id/main_btn_to_dialogFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="?attr/ThemeTextColor"
         android:text="对话框Fragment"
         android:background="#772222ff"/>
 
@@ -62,6 +59,16 @@
         android:id="@+id/main_btn_to_mvpsimple"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="?attr/ThemeTextColor"
         android:text="MVP设计"
+        android:background="#772222ff"/>
+
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/main_btn_to_GdMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="?attr/ThemeTextColor"
+        android:text="高德地图"
         android:background="#772222ff"/>
 </LinearLayout>

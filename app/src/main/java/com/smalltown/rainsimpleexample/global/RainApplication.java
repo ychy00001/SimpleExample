@@ -7,6 +7,7 @@ import com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
+import com.smalltown.rainsimpleexample.manager.RequestManager;
 
 /**
  * Created by Diagrams on 2015/12/22 16:37
@@ -26,7 +27,8 @@ public class RainApplication extends Application {
         mainHandler = new Handler();
         initImageLoader(this);
 
-
+        // 初始化volley
+        RequestManager.init(this);
     }
     public static Context getContext(){
         return mContext;

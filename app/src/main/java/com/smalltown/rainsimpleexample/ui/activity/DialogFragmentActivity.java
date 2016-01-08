@@ -15,7 +15,7 @@ public class DialogFragmentActivity extends BaseActivity{
 
     @Bind(R.id.fl_continer)FrameLayout mContiner;
     @Override
-    protected int initView() {
+    protected int setContentLayout() {
         return R.layout.activity_dialogfragment;
     }
 

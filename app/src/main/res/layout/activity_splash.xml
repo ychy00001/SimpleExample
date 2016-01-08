@@ -1,24 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-    <ImageView
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/img_start"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#553355ff"/>
+        android:scaleType="centerCrop"
+        tools:ignore = "ContentDescription"/>
 
-    <TextView
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="150dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:textColor="#cc33ff"
-        android:textSize="30sp"
-        android:text="功能代码示例"/>
 
     <com.lsjwzh.widget.materialloadingprogressbar.CircleProgressBar
         android:id="@+id/progressBar"
@@ -30,4 +24,28 @@
         app:mlpb_progress_text_visibility="visible"
         android:layout_width="56dp"
         android:layout_height="56dp" />
+
+    <!--启动页底部文字-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:layout_marginBottom="45dp"
+        android:text="小镇日报"/>
+
+    <TextView
+        android:id="@+id/tv_splsah_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="10dp"
+        android:textSize="15sp"
+        android:text="\@小镇工作室"/>
 </RelativeLayout>

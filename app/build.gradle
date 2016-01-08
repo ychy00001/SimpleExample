@@ -28,5 +28,9 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     compile project(':library-nineoldandroid')
-    compile project(':library_materialprogressbar')
+    compile project(':library-materialprogressbar')
+    compile project(':library-volley')
+    compile files('libs/AMap_2DMap_V2.8.0_20151231.jar')
+    compile files('libs/AMap_Location_V2.2.0_20151222.jar')
+    compile files('libs/AMap_Search_V2.8.0_20160105.jar')
 }
