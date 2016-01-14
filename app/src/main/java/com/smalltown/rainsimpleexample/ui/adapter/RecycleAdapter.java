@@ -65,4 +65,12 @@ public class RecycleAdapter extends RecyclerView.Adapter<RecycleAdapter.MyViewHo
         }
     }
 
+
+    /**
+     * 设置加载更多后的数据
+     * @param datas 加载更多后的数据
+     */
+    public void setLoadMoreData(List<String> datas){
+        this.mDatas = datas;
+    }
 }

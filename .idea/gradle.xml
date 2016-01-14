@@ -16,6 +16,15 @@
             <option value="$PROJECT_DIR$/library-volley" />
           </set>
         </option>
+        <option name="myModules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/library-materialprogressbar" />
+            <option value="$PROJECT_DIR$/library-nineoldandroid" />
+            <option value="$PROJECT_DIR$/library-volley" />
+          </set>
+        </option>
       </GradleProjectSettings>
     </option>
   </component>
