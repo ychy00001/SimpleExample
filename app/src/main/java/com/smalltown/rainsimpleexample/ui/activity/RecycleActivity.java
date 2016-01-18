@@ -1,8 +1,9 @@
 package com.smalltown.rainsimpleexample.ui.activity;
 
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.OrientationHelper;
+import android.view.View;
 import butterknife.Bind;
 import com.smalltown.rainsimpleexample.R;
 import com.smalltown.rainsimpleexample.ui.adapter.RecycleAdapter;
@@ -37,7 +38,8 @@ public class RecycleActivity extends BaseActivity {
 
     private void initRecycleView() {
         //设置布局管理器
-        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+//        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        mRecyclerView.setLayoutManager(new GridLayoutManager(this,2));
         //设置adapter
         mAdapter = new RecycleAdapter(this,mDatas);
         //        //设置Item增加、移除动画
@@ -45,6 +47,7 @@ public class RecycleActivity extends BaseActivity {
         mRecyclerView.setAutoLoadMoreEnable(true);
         //添加分割线
         mRecyclerView.setAdapter(mAdapter);
+        mRecyclerView.setHeaderView(new View(this));
         mRecyclerView.addItemDecoration(new DividerItemDecoration(this, OrientationHelper.VERTICAL));
 
         //设置自动加载更多
