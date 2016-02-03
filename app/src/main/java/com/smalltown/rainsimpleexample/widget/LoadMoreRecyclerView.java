@@ -595,7 +595,6 @@ public class LoadMoreRecyclerView extends RecyclerView {
 //            if (getLayoutManager() instanceof LinearLayoutManager) {
 //                return TYPE_LIST;
 //            }
-//            //TODO 适配GridLayout 是否添加 || getLayoutManager() instanceof  GridLayoutManager
 //            else if (getLayoutManager() instanceof StaggeredGridLayoutManager) {
 //                return TYPE_STAGGER;
 //            } else {

@@ -14,7 +14,9 @@
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
 
@@ -52,6 +54,10 @@
         <activity android:name=".ui.activity.ObjAnimatorActivity"/>
         <activity android:name=".ui.activity.MvpSimpleActivity"/>
         <activity android:name=".ui.activity.GdMapActivity"/>
+        <activity android:name=".ui.activity.RetrofitActivity"/>
+        <activity android:name=".ui.activity.JobQueueActivity"/>
+        <activity android:name=".ui.activity.RxAndroidActivity"/>
+        <activity android:name=".ui.activity.BlowActivity"/>
 
         <!-- 定位需要的服务 使用2.0的定位需要加上这个 -->
         <service android:name="com.amap.api.location.APSService"></service>

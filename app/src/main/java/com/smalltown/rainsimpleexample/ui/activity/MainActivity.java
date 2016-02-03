@@ -109,12 +109,48 @@ public class MainActivity extends BaseActivity
         startActivity(intent,TRANS_TYPE_TRANSLATE);
     }
     /**
-     * 跳转Mvp框架测试页面
+     * 跳转高德地图
      */
     @OnClick(R.id.main_btn_to_GdMap)
     void toGdMap(){
         Intent intent = new Intent(MainActivity.this,GdMapActivity.class);
         startActivity(intent,TRANS_TYPE_TRANSLATE);
+    }
+
+    /**
+     * 跳转Retrofit网络加载
+     */
+    @OnClick(R.id.main_btn_to_GdMap)
+    void toRetrofit(){
+        Intent intent = new Intent(MainActivity.this,RetrofitActivity.class);
+        startActivity(intent,TRANS_TYPE_TRANSLATE);
+    }
+
+    /**
+     * 跳转Retrofit网络加载
+     */
+    @OnClick(R.id.main_btn_to_job_queue)
+    void toJobQueue(){
+        Intent intent = new Intent(MainActivity.this,JobQueueActivity.class);
+        startActivity(intent,TRANS_TYPE_TRANSLATE);
+    }
+
+    /**
+     * 跳转Rxandroid
+     */
+    @OnClick(R.id.main_btn_to_rx_android)
+    void toRxAndroid(){
+        Intent intent = new Intent(MainActivity.this,RxAndroidActivity.class);
+        startActivity(intent,TRANS_TYPE_ZOOM);
+    }
+
+    /**
+     * 吹一吹
+     */
+    @OnClick(R.id.main_btn_to_chui)
+    void toChui(){
+        Intent intent = new Intent(MainActivity.this,BlowActivity.class);
+        startActivity(intent,TRANS_TYPE_ZOOM);
     }
 
 
